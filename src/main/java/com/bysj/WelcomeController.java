@@ -14,14 +14,14 @@ public class WelcomeController {
     @RequestMapping("/")
     public ModelAndView welcome(){
         ModelAndView welcomeView = new ModelAndView();
-        welcomeView.setViewName("welcome");
+        welcomeView.setViewName("/welcome/welcome");
         return welcomeView;
     }
 
-    @RequestMapping("/vueTest")
+    @RequestMapping("/index")
     public  ModelAndView vueTest(){
         ModelAndView vueView = new ModelAndView();
-        vueView.setViewName("vueTest");
+        vueView.setViewName("/project/indexPage");
         return vueView;
     }
 }
